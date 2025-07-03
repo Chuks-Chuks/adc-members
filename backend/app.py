@@ -1,7 +1,7 @@
 # import sys
 # sys.path.append('C:/Users/phili/adc-forms')
 from flask import Flask, request, redirect
-from db import get_connection
+from .db import get_connection
 
 app = Flask(__name__)
 
