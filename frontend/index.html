@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ADC Members</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>ADC Member Info</h2>
+    <form action="http://127.0.0.1:5000/submit" method="POST" name="adcMembers" netlify>
+      <label>Membership ID:</label>
+      <input type="text" name="membership_id">
+
+        <label>First Name:</label>
+      <input type="text" name="first_name" required>
+
+      <label>Last Name:</label>
+      <input type="text" name="last_name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Address:</label>
+      <input type="text" name="address" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" name="phone_number" required>
+
+      <label>Local Government:</label>
+      <input type="text" name="local_government" required>
+
+      <label>Polling Unit:</label>
+      <input type="text" name="polling_unit" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
