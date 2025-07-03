@@ -1,6 +1,6 @@
-import sys
-sys.path.append('C:/Users/phili/adc-forms')
-from flask import Flask, request
+# import sys
+# sys.path.append('C:/Users/phili/adc-forms')
+from flask import Flask, request, redirect
 from db import get_connection
 
 app = Flask(__name__)
@@ -30,7 +30,7 @@ def submit():
     conn.commit()
     cur.close()
     conn.close()
-    return "Submission successful!"
+    return redirect("https://wondrous-fenglisu-67c8a9.netlify.app/thank-you.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
